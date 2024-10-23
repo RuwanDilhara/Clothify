@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="662.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.icet.controller.LoginController">
+    <children>
+      <ImageView fitHeight="430.0" fitWidth="609.0" layoutX="454.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/shopping-8042865_1920.png" />
+         </image>
+      </ImageView>
+         <Label layoutX="127.0" layoutY="187.0" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="Sahana Store" />
+      <JFXButton buttonType="RAISED" layoutX="281.0" layoutY="388.0" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #4CAF50;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="82.0" layoutY="392.0" prefHeight="26.0" prefWidth="120.0" style="-fx-background-size: 0px;" text="Froget Password" underline="true" />
+         <PasswordField fx:id="passwordField" layoutX="75.0" layoutY="331.0" prefHeight="38.0" prefWidth="326.0" promptText="Password---&gt;  1234" />
+         <TextField fx:id="emailField" layoutX="75.0" layoutY="269.0" prefHeight="36.0" prefWidth="326.0" promptText="Email--&gt;   admin" />
+    </children>
+
+</AnchorPane>

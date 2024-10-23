@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="662.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.icet.controller.AdminController">
+<BorderPane prefHeight="662.0" prefWidth="954.0">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="800.0" spacing="20" style="-fx-background-color: #2C3E50; -fx-padding: 10;">
+            <Label style="-fx-text-fill: white; -fx-font-size: 24px;" text="Clothify Store - Admin Dashboard" />
+            <Region fx:id="spacer" prefHeight="42.0" prefWidth="131.0" style="-fx-background-color: green;" styleClass="b" HBox.hgrow="ALWAYS" />
+            <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Welcome, Admin" />
+            <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: red;" text="Logout" textFill="WHITE">
+                <font>
+                    <Font name="Segoe Print Bold" size="14.0" />
+                </font>
+            </JFXButton>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="241.0" spacing="15" style="-fx-background-color: #34495E; -fx-padding: 10;">
+            <children>
+                <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="350.0" text="User Management" textFill="WHITE">
+                    <font>
+                        <Font name="Poppins Bold" size="17.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton prefHeight="35.0" prefWidth="292.0" text="Product Management" textFill="WHITE">
+                    <font>
+                        <Font name="Poppins Bold" size="17.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton prefHeight="35.0" prefWidth="278.0" text="Order Management" textFill="WHITE">
+                    <font>
+                        <Font name="Poppins Bold" size="17.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton prefHeight="35.0" prefWidth="261.0" text="Reports" textFill="WHITE">
+                    <font>
+                        <Font name="Poppins Bold" size="17.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <AnchorPane fx:id="contentPane" prefHeight="538.0" prefWidth="582.0">
+        </AnchorPane>
+    </center>
+</BorderPane>
+</AnchorPane>
